@@ -18,7 +18,8 @@ public class DbListProductServlet extends HttpServlet {
 		ArrayList<ProductBean> products = productDao.getAllProducts();
 		request.setAttribute("products", products);
 		request.getRequestDispatcher("DbListProduct.jsp").forward(request, response);
-
+			//sdfsdf /sdfsdf //df 
+		
 	}
 
 }
