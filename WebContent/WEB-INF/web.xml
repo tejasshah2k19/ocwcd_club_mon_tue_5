@@ -213,4 +213,24 @@
     <servlet-name>DbDeleteProductServlet</servlet-name>
     <url-pattern>/DbDeleteProductServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DbEditProductServlet</display-name>
+    <servlet-name>DbEditProductServlet</servlet-name>
+    <servlet-class>com.controller.DbEditProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DbEditProductServlet</servlet-name>
+    <url-pattern>/DbEditProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DbUpdateProductServlet</display-name>
+    <servlet-name>DbUpdateProductServlet</servlet-name>
+    <servlet-class>com.controller.DbUpdateProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DbUpdateProductServlet</servlet-name>
+    <url-pattern>/DbUpdateProductServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
