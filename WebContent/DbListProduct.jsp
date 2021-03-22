@@ -34,8 +34,8 @@
 				<td><%=p.getPrice()%></td>
 				<td><a
 					href="DbDeleteProductServlet?productId=<%=p.getProductId()%>">Delete</a>
-					| <a href="DbEditProductServlet?productId=<%=p.getProductId()%>"> Edit</a>
-					|</td>
+					| <a href="DbEditProductServlet?productId=<%=p.getProductId()%>">
+						Edit</a> |</td>
 			</tr>
 
 			<%

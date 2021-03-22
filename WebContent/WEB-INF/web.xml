@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>ocwcd_club_mont_wen_5</display-name>
   <welcome-file-list>
     <welcome-file>Signup.html</welcome-file>
@@ -232,5 +232,40 @@
   <servlet-mapping>
     <servlet-name>DbUpdateProductServlet</servlet-name>
     <url-pattern>/DbUpdateProductServlet</url-pattern>
+  </servlet-mapping>
+  <jsp-config>
+    <taglib>
+      <taglib-uri>teamxfunction</taglib-uri>
+      <taglib-location>/WEB-INF/elfunction.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>adminfunction</taglib-uri>
+      <taglib-location>/WEB-INF/adminfunction.tld</taglib-location>
+    </taglib>
+    
+    <taglib>
+    	<taglib-uri>stag</taglib-uri>
+    	<taglib-location>/WEB-INF/stag.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+  <servlet>
+    <description></description>
+    <display-name>AddCookieServlet</display-name>
+    <servlet-name>AddCookieServlet</servlet-name>
+    <servlet-class>com.controller.AddCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCookieServlet</servlet-name>
+    <url-pattern>/AddCookieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PrintAllCookiesServlet</display-name>
+    <servlet-name>PrintAllCookiesServlet</servlet-name>
+    <servlet-class>com.controller.PrintAllCookiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrintAllCookiesServlet</servlet-name>
+    <url-pattern>/PrintAllCookiesServlet</url-pattern>
   </servlet-mapping>
 </web-app>

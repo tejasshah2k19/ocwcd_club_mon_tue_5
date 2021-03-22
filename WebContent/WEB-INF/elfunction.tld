@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<function>
+		<name>lappinoz</name>
+		<function-class>com.elfunction.UserFunction</function-class>
+		<function-signature>java.lang.String greet()</function-signature>
+	</function>
+
+	<function>
+		<name>len</name>
+		<function-class>com.elfunction.UserFunction</function-class>
+		<function-signature>java.lang.Integer nameLength(java.lang.String)</function-signature>
+	</function>
+</taglib>
