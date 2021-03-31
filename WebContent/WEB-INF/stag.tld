@@ -9,4 +9,11 @@
 		<body-content>empty</body-content>
 	</tag>
 
+	<tag>
+		<name>today</name>
+		<tag-class>com.stag.TodayTag</tag-class>
+		<body-content>
+	empty</body-content>
+	</tag>
+
 </taglib>

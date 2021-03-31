@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 <%@ taglib uri="stag" prefix="s"%>
+ 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -10,6 +11,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<s:greet />
+	<s:greet /><br>
+	
+	<s:today/>
+	
 </body>
 </html>
