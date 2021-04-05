@@ -13,7 +13,27 @@
 		<name>today</name>
 		<tag-class>com.stag.TodayTag</tag-class>
 		<body-content>
-	empty</body-content>
+			empty
+		</body-content>
 	</tag>
 
+
+	<tag>
+		<name>currency</name>
+		<tag-class>com.stag.CurrencyTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>type</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>amount</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+
+	</tag>
 </taglib>

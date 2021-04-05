@@ -13,7 +13,10 @@
 <body>
 	<s:greet /><br>
 	
-	<s:today/>
+	<s:today/><br>
+	<s:currency amount="7500" type="usd"/><br>
+	<s:currency amount="8500" type="gbp"/><br>
+	
 	
 </body>
 </html>
