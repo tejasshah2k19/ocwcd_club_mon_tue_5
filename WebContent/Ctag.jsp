@@ -10,6 +10,11 @@
 </head>
 <body>
 
+
+	 <c:if test="sds">
+	 	sdf 
+	 </c:if>
+	
 	<c:greet />
 	<br>
 	<c:sqr num="5" />
@@ -21,6 +26,8 @@
 	
 	
 	<c:printloop count="5">Royal<br></c:printloop>
+	<br>
+	<c:upper>Royal educATion</c:upper>
 	<br>
 	Hi....
 

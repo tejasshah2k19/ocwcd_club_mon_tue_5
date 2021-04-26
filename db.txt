@@ -4,4 +4,60 @@ create table user (
 	email varchar(20),
 	password varchar(20)
 );
+
+----------------------------------------------------------
+
+to modify body content we need to implement BodyTag interface 
+
+
+1) your class implements BodyTag 
+2) three instance variable
+	Tag parent;
+	PageContext pageContext;
+	BodyContent bodyContent;//this will store your body 
+3) getters - setters 
+4) doStartTag(),doEndTag(),release()
+5) doAfterBody()
+6) doInitBody()
+
+LOGIC 
+7) body fetch -->doStartTag -> return type -> EVAL_BODY_BUFFERED 
+	if we have EVAL_BODY_BUFFERED in doStartTag then 	
+		it will call doInitBody , setBodyContent ---> body initialize {bodyContent}  
 	
+8) 	now you can write your logic for tag inside doAfterBody()
+	in side doAfterBody() ,
+		1) modify your bodyContent 
+		 	String body = getBodyContent().getString(); // this will extract bodyContent into body variable 
+		 	now you can modify body -[ convert to upper ]  
+		2) print modified body  
+		 	  we can get JspWriter with the help bodyContent only.
+		 	  JspWriter out = getBodyContent().getEnclosingWriter(); 
+		 	  out.print(modifiedBody)
+		3) set return type SKIP_BODY 
+		 	
+
+9) SET EVAL_PAGE in doEndTag 
+
+--------------------------------------------
+jstl 
+	core
+		if 
+		try-cath 
+		loop
+ 
+	sql* 
+	formatting* 
+	xml*
+	function* 
+
+
+1) jstl.jar 
+2) jsp use 
+
+
+
+
+	 	
+		 	
+		 
