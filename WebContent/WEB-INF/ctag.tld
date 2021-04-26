@@ -10,4 +10,36 @@
 	</tag>
 
 
+	<tag>
+		<name>sqr</name>
+		<tag-class>com.ctag.SqrTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>num</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>print</name>
+		<tag-class>com.ctag.PrintTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+
+	<tag>
+		<name>printloop</name>
+		<tag-class>com.ctag.PrintLoopTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>count</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+
+
 </taglib>

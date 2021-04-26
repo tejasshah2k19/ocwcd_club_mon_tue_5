@@ -12,11 +12,20 @@
 
 	<c:greet />
 	<br>
+	<c:sqr num="5" />
+	<br>
+	<c:sqr num="10"></c:sqr>
+	<br>
+
+	<c:print>hey i am from print tag</c:print><br> 
 	
-	Hi....  
 	
-	
-	
+	<c:printloop count="5">Royal<br></c:printloop>
+	<br>
+	Hi....
+
+
+
 
 </body>
 </html>
