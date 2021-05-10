@@ -45,6 +45,19 @@
 
 
 
+	<tag>
+		<name>select</name>
+		<tag-class>com.stag.SelectTag</tag-class>
+		<attribute>
+			<name>table</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<body-content>empty</body-content>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+
+
 
 
 

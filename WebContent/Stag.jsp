@@ -23,6 +23,15 @@
 	<s:sum x="10" y="20" />
 	<br>
 	<s:sum a="5" b="10" c="15" />
+	<br>
+	<br>
+	<bR>
+
+	<s:select table="user" c1="firstName" c2="lastName" />
+	<br>
+	<br>
+	<s:select table="country" c1="countryName" c2="capitalName" />
+
 
 </body>
 </html>
